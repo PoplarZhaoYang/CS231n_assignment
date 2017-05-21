@@ -6,7 +6,7 @@ def svm_loss(W, X, y, C, margin=1):
     * X is our training data
     * y is label vector
     * C is the nomalization coefficient
-    * margin is the svm margin parameter
+    * margin is the svm margin parameter(In fact, the margin and C control the same trade-off, so one of them is enough)
     """
     answer = W.dot(X)
     correct = answer[y, np.arange(X.shape[1])]
